@@ -1,17 +1,22 @@
 :root {
     --color: #FFC53D;
+    --color-black: #222222;
+    color: var(--color-black);
+    font-family: Raleway;
+    font-size: 18px;
 }
+
 body {
     max-width: 1200px;
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    background: yellow;
-    font-family: Raleway;
-}
+    background: white;
 
+    
+    }
+
+    /* LINKS */
 a:visited,
 a:active { 
     text-decoration: none; 
@@ -19,7 +24,7 @@ a:active {
 
 a:link {
     text-decoration: none; 
-    color: black;   
+    color: var(--color-black);   
 }
 
 a:hover {
@@ -27,22 +32,17 @@ color: var(--color) ;
 }
 
 
-
-
 /* HEADER */
-
 header {
     display: flex;
     justify-content: space-between;
-    margin: 4vh auto 0;
+    margin: 2% auto 0;
     font-weight: bold;
-    font-size: 18px;
-    width: 85%;
-    background: white;
+    width: 90%;
 }
 
 .logo {
-    margin-top: 7px;
+    margin-top: 1%;
 }
 
 .logo:hover {
@@ -54,53 +54,23 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 40%;
 }
 
 nav a {
-    margin: 12px;
+    margin-top: 2%;
 }
 
 
 /* WELCOME */
 
 .welcome {
+    display: block;
+    width: 100%;
+    height: 96vh;
     margin-top: 4vh;
-    /* position: relative;
-    z-index: 1;
-    /* background: url(./Assets/images/cover\ photo.png), url(./Assets/images/cover\ layer.png); */
-    /* background-repeat: no-repeat; */
-    /* background-origin: border-box; */
-    background: red;
-    /* background-position: 0% 0%, 100% 0%; */
-    /* margin: 0 auto; */
-    /* background-size: contain; */
-    /* background-size: 100% auto; */
-    /* margin-top: 4vh; */
-    /* display: block; */
-    /* background-image: url(./Assets/images/cover\ layer.png); */
-     /* -photo,
-.welcome-layer {
-    margin-top: 70px;
-    width: 100%; */
-}
-
-.welcome-photo,
-.welcome-layer,
-.welcome-text {
-    /* position: absolute;
-    margin: 0 auto; */
-}
-
-/* .welcome-photo {
-    z-index: 5;
-} */
-
-.welcome-layer {
-    /* overflow: hidden; */
-    /* width: 80vw;
-    height: auto;
-    z-index: 10; */
+    background-image: url(./Assets/images/cover\ photo.png);
 }
 
 .welcome-text {
@@ -114,11 +84,18 @@ nav a {
     font-size: 100px;
     font-weight: bold;
     color: var(--color) ;
-    margin: 0 auto;
+    margin: 13% auto 0;
+    animation: animation 2s infinite ease-in-out;
     }
 
+@keyframes animation {
+    from {opacity: 0.1;}
+    50% {opacity: 1;}
+    to {opacity: 0.1;}
+}
+
 .welcome-text-2 {
-    font-size: 36px;
+    font-size: 2rem;
     color: white;
 }
 
@@ -126,7 +103,8 @@ nav a {
     display: flex;
     justify-content: space-between;
     width: 25%;
-}
+    }
+
 
 /* CHTO-TO */
 
@@ -136,12 +114,12 @@ nav a {
 
 .chto-to-text {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2rem;
 }
 
-.chto-to-button {
-width: 30px;
-height: 25px; 
+.button {
+width: 20%;
+height: 15%; 
 color: white;
 font-size: 18px;
 background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
@@ -154,31 +132,105 @@ margin: 0 4vw;
 /* ABOUT ME */
 
 .title {
+    margin: 40px auto 15px;
     font-family: Ubuntu;
     font-weight: bold;
-    font-size: 32px;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .about-me-data {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 3px 3px var(--color), -1em 0 .4em olive;
+}
+
+
+.about-me-items {
+    text-align: center;
+    margin: 7%;
+    list-style-type: none;
+    font-family: Raleway;
+    font-style: normal;
+    
+}
+
+
+.about-black {
+    font-weight: bold;
+}
+
+.about-orange {
+    color: var(--color);
+}
+
+/* .about-me-text {
+    font-weight: 400;
+    font-size: 18px;
+    border-left: 4px dashed #FFC53D;
+    margin-left: 8px; */
+
+
+/* SKILLS */
+.skills-data {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 60%;
     margin: 0 auto;
-    /* grid-template: 1fr 1fr 2fr; */
+    background: white;
+    box-shadow: 3px 3px var(--color), -1em 0 .4em olive;
+    }
+
+.skills-items {
+    margin: 7%;
+
 }
 
-.about-me-text {
-    font-weight: 400;
-    font-size: 18px;
+.skills-items:first-child {
+    border-left: none;
 }
 
-/* SKILLS */
+/* PORTFOLIO */
+/* CONTACT */
 
-.skills-data {
+.contact-form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 45%;
+    width: 80%;
+    height: 80%;
+    background: gray;
     margin: 0 auto;
+}
+
+.contact-form-1 {
+    display: block;
+    width: 40%;
+    height: 40%;
+    background: orange;
+}
+
+.contact-form-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-item {
+    border-radius: 15px;
+}
+
+.contact-button {
+    width: 20%;
+height: 15%; 
+color: white;
+font-size: 18px;
+background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+margin: 0 4vw;
 }

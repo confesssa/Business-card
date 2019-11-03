@@ -38,41 +38,41 @@
     <section class="chto-to">
         <p class='chto-to-text'>I am happy to help you with any problem!</p>
         <form class="buttons">
-            <button class='chto-to-button' value="Contact me!" href='#contact'>Contact me!</button>
-            <button class='chto-to-button' value="Check my CV">Check my CV</button>
+            <button class='button' value="Contact me!" href='#contact'>Contact me!</button>
+            <button class='button' value="Check my CV">Check my CV</button>
         </form>
     </section>
-    <section>
-        <p id='about-me' class='title'>About me</p>
+    <section id='about-me'>
+        <p class='title'>About me</p>
         
         <div class='about-me-data'>
-            <div><img src="./Assets/images/Mask Group.png" alt=""></div>
+            <div class='about-me-items'><img src="./Assets/images/Mask Group.png" alt=""></div>
             <div>
-                <ul>
-                    <li>Full name: Designer</li>
-                    <li>Age: 21 Years</li>
-                    <li>Profile: Fullstack</li>
-                    <li>Telephone: +48 123 456 789</li>
-                    <li>E-mail: night-coding@dev.com</li>
+                <ul class='about-me-items'>
+                    <li><p class='about-black'>Full name:</p><p class='about-orange'> Designer</p></li>
+                    <li><p class='about-black'>Age: </p><p class='about-orange'>  21 Years</p></li>
+                    <li><p class='about-black'>Profile: </p><p class='about-orange'> Fullstack</p></li>
+                    <li><p class='about-black'>Telephone:</p><p class='about-orange'>  +48 123 456 789</p></li>
+                    <li><p class='about-black'>E-mail: </p><p class='about-orange'> night-coding@dev.com</p></li>
                 </ul>
             </div>
-            <div><p class='about-me-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p></div>
+            <div class='about-me-items'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p></div>
         </div>
     </section>
     <section id='skills'>
         <p class='title'>Skills</p>
         <div class='skills-data'>
-            <div>
+            <div class='skills-items'>
                 <img src="./Assets/images/icon_UxUi.svg" alt="">
                 <p>UX/UI</p>
                 <p>Figma</p>
             </div>
-            <div>
+            <div class='skills-items'>
                <img src="./Assets/images/icon_frontend.svg" alt=""> 
                <p>Front End</p>
                <p>Html, CSS, JavaScript</p>
             </div>
-            <div>
+            <div class='skills-items'>
                 <img src="./Assets/images/surface1.svg" alt="">
                 <p>Back End</p>
                 <p>PHP, Node.js</p>
@@ -84,8 +84,23 @@
             <p id='portfolio' class='title'>Portfolio</p>
         </section>
 
-    <section>
-        <p id='contact' class='title'>Contact us</p>
+    <section id='contact'>
+        <p class='title'>Contact us</p>
+        <div class="contact-form">
+            <div class='contact-form-1'>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class='contact-form-2'>
+                <p>Let`s start!</p>
+                <form class='form' action="#">
+                    <input class='form-item' type="text" name="Name" id='Name' placeholder="Name">
+                    <input class='form-item' type="text" name="E-mail" id="E-mail" placeholder="E-mail">
+                    <input class='form-item' type="text" name="Topic" id="Topic" placeholder="Topic">
+                    <input class='form-item' type="text" name="Message" id="Message" placeholder="Message">
+                    <input class='form-item' class='button' type="submit" value="Send">
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 </html>

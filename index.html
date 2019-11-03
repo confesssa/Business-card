@@ -25,7 +25,7 @@
         <!-- <img class='welcome-layer' src="./Assets/images/cover layer.png" alt=""> -->
         <div class='welcome-text'>
             <p class='welcome-text-1'>Welcome!</p>
-            <p class='welcome-text-2'>My name is Desiner</p>
+            <p class='welcome-text-2'>My name is Designer</p>
             <div class='welcome-social-media'>
                 <a href="#"><img src="./Assets/images/Group 3.2.svg" alt=""></a>
                 <a href="#"><img src="./Assets/images/Group 2.4.svg" alt=""></a>
@@ -46,17 +46,29 @@
         <p class='title'>About me</p>
         
         <div class='about-me-data'>
-            <div class='about-me-items'><img src="./Assets/images/Mask Group.png" alt=""></div>
+            <div class='about-me-photo'><img src="./Assets/images/Mask Group.png" alt=""></div>
             <div>
-                <ul class='about-me-items'>
-                    <li><p class='about-black'>Full name:</p><p class='about-orange'> Designer</p></li>
-                    <li><p class='about-black'>Age: </p><p class='about-orange'>  21 Years</p></li>
-                    <li><p class='about-black'>Profile: </p><p class='about-orange'> Fullstack</p></li>
-                    <li><p class='about-black'>Telephone:</p><p class='about-orange'>  +48 123 456 789</p></li>
-                    <li><p class='about-black'>E-mail: </p><p class='about-orange'> night-coding@dev.com</p></li>
+                <ul class='about-me-resume'>
+                    <li>
+                        <p class="about-black">Full name:  <span class="about-orange">Designer</span></p>
+                    </li>
+                    <li>
+                        <p class="about-black">Age:  <span class="about-orange">21 Years</span></p>
+                    </li>
+                    <li>
+                        <p class="about-black">Profile: <span class="about-orange">Fullstack</span></p>
+                    </li>
+                    <li>
+                        <p class="about-black">Telephone: <span class="about-orange">+48 123 456 789</span></p>
+                    </li>
+                    <li>
+                        <p class="about-black">E-mail: <span class="about-orange">night-coding@dev.com</span></p>
+                    </li>
                 </ul>
             </div>
-            <div class='about-me-items'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p></div>
+            <div>
+                <p class='about-me-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+            </div>
         </div>
     </section>
     <section id='skills'>
@@ -64,18 +76,18 @@
         <div class='skills-data'>
             <div class='skills-items'>
                 <img src="./Assets/images/icon_UxUi.svg" alt="">
-                <p>UX/UI</p>
-                <p>Figma</p>
+                <p class='about-orange'>UX/UI</p>
+                <p class='about-black' >Figma</p>
             </div>
             <div class='skills-items'>
                <img src="./Assets/images/icon_frontend.svg" alt=""> 
-               <p>Front End</p>
-               <p>Html, CSS, JavaScript</p>
+               <p class='about-orange' >Front End</p>
+               <p class='about-black'>Html, CSS, JavaScript</p>
             </div>
             <div class='skills-items'>
                 <img src="./Assets/images/surface1.svg" alt="">
-                <p>Back End</p>
-                <p>PHP, Node.js</p>
+                <p class='about-orange'>Back End</p>
+                <p class='about-black'>PHP, Node.js</p>
             </div>
         </div>
     </section>
@@ -86,21 +98,35 @@
 
     <section id='contact'>
         <p class='title'>Contact us</p>
-        <div class="contact-form">
-            <div class='contact-form-1'>
-                <div><img src="" alt=""></div>
+        <div class="contact-wrapper">
+            <div class='contact-info'>
+                <img src="./Assets/images/logo_message.svg" alt="">
+                <div>
+                    <p class='contact-text'>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+                </div>
+                <div class='contact-social-media'>
+                        <a href="#"><img src="./Assets/images/Group 3.2.svg" alt=""></a>
+                        <a href="#"><img src="./Assets/images/Group 2.4.svg" alt=""></a>
+                        <a href="#"><img src="./Assets/images/Vector.svg" alt=""></a>
+                        <a href="#"><img src="./Assets/images/Group 2.3.svg" alt=""></a>
+                </div>
+                <div class="contacts">
+                    <p>Designer <br> Poland, Wrocław</p>
+                    <p>ul. Tęczowa 12/3 50-000 <br> +48 123-456-789 <br> night-coding@dev.com</p>
+                </div>
             </div>
-            <div class='contact-form-2'>
-                <p>Let`s start!</p>
+            <div class='contact-form'>
+                <p class='about-black'>Let`s start!</p>
                 <form class='form' action="#">
                     <input class='form-item' type="text" name="Name" id='Name' placeholder="Name">
                     <input class='form-item' type="text" name="E-mail" id="E-mail" placeholder="E-mail">
                     <input class='form-item' type="text" name="Topic" id="Topic" placeholder="Topic">
                     <input class='form-item' type="text" name="Message" id="Message" placeholder="Message">
-                    <input class='form-item' class='button' type="submit" value="Send">
+                    <input class='form-item, contact-button' type="submit" value="Send">
                 </form>
             </div>
         </div>
     </section>
+    <footer>Copyrights © 2019 CodersCrew & Volha</footer>
 </body>
 </html>

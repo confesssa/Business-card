@@ -1,3 +1,4 @@
+
 :root {
     --color: #FFC53D;
     --color-black: #222222;
@@ -38,13 +39,10 @@ color: var(--color) ;
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2% auto 0;
     font-weight: bold;
     width: 90%;
-}
-
-.logo {
-    margin-top: 1%;
 }
 
 .logo:hover {
@@ -56,6 +54,7 @@ header {
 
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 40%;
 }
@@ -144,8 +143,9 @@ margin: 0 4vw;
 }
 
 .about-me-data {
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    display: flex;
+    flex: 17% 35% 48%;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -157,7 +157,6 @@ margin: 0 4vw;
 .about-me-photo,
 .about-me-resume,
 .about-me-text {
-    /* text-align: center; */
     margin: 6.5%;
     font-family: Raleway;
     font-style: normal;
@@ -190,34 +189,25 @@ margin: 0 4vw;
 
 
 /* SKILLS */
-@media screen and (max-width: 820px) {
-    display: flex;
-    flex-direction: row;
-}
 
 .skills-data {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    min-width: 820px;
     margin: 0 auto;
-    background: white;
+    width: 80%;
+    justify-content: space-around;
     box-shadow: 3px 3px var(--color), -1em 0 .4em olive;
-    }
-
-
+}
 
 .skills-items {
-    margin: 7%;
+    margin: 2%;
 }
 
 .skills-items .about-black {
     font-weight: normal;
 }
 
-.skills-1 {
+/* .skills-1 {
     order: 0;
 }
 
@@ -227,7 +217,7 @@ margin: 0 4vw;
 
 .skills-3 {
     order: 2;
-}
+} */
 
 /* PORTFOLIO */
 .portfolio {
@@ -235,6 +225,7 @@ margin: 0 4vw;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 90%;
+    justify-content: center;
 }
 
 a img {
@@ -245,9 +236,10 @@ a img {
 
 .contact-wrapper {
     display: grid;
+    /* flex-direction: row; */
     grid-template-columns: 1fr 1fr;
     width: 80%;
-    height: 80%;
+    /* height: 80%; */
     background: white;
     margin: 0 auto;
     box-shadow: 3px 3px var(--color), -1em 0 .4em olive;
@@ -265,8 +257,12 @@ a img {
 .contacts {
     margin: 3%;
 }
-.cotnact-info img {
+.contact-info img {
     display: block;
+}
+
+.contact-text {
+    text-align: center;
 }
 
 .contact-social-media {
@@ -306,5 +302,48 @@ a img {
 /* FOOTER */
 footer {
     font-size: 0.8rem;
-    margin: 3%;
+    margin: 5%;
+}
+
+@media screen and (max-width: 820px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+        text-align: right;
+    }
+
+    .skills-data {
+        display: flex;
+        flex-direction: column;
+        max-width: 820px;
+        margin: 0 auto;
+    }
+
+    .about-me-data {
+        display: flex;
+        flex-direction: column;
+        max-width: 820px;
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 820px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 456px) {
+    .welcome {
+        display: none;
+    }
+
+    .chto-to {
+        display: none;
+    }
 }
